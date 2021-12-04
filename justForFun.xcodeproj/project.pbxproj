@@ -18,6 +18,8 @@
 		D11BA76C27528484009F18D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D11BA76A27528484009F18D2 /* LaunchScreen.storyboard */; };
 		D11BA778275287DE009F18D2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D11BA777275287DE009F18D2 /* FirebaseAuth */; };
 		D11BA77A275287DE009F18D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = D11BA779275287DE009F18D2 /* FirebaseFirestore */; };
+		D19B5EF32753E470002997C6 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B5EF22753E470002997C6 /* HomeScreenViewController.swift */; };
+		D19B5EF527540288002997C6 /* GameDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19B5EF427540288002997C6 /* GameDescriptionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		D11BA76827528484009F18D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D11BA76B27528484009F18D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D11BA76D27528484009F18D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D19B5EF22753E470002997C6 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		D19B5EF427540288002997C6 /* GameDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDescriptionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 			children = (
 				D1027DB227528F0200AAE755 /* LoginViewController.swift */,
 				D1027DB62752943E00AAE755 /* RegisterViewController.swift */,
+				D19B5EF22753E470002997C6 /* HomeScreenViewController.swift */,
+				D19B5EF427540288002997C6 /* GameDescriptionViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -191,11 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D19B5EF527540288002997C6 /* GameDescriptionViewController.swift in Sources */,
 				D1027DB327528F0200AAE755 /* LoginViewController.swift in Sources */,
 				D1027DB72752943E00AAE755 /* RegisterViewController.swift in Sources */,
 				D11BA76727528483009F18D2 /* justForFun.xcdatamodeld in Sources */,
 				D11BA75D27528483009F18D2 /* AppDelegate.swift in Sources */,
 				D11BA75F27528483009F18D2 /* SceneDelegate.swift in Sources */,
+				D19B5EF32753E470002997C6 /* HomeScreenViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
