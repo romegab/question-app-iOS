@@ -19,6 +19,11 @@ class RegisterViewController : UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        confirmPasswordTextField.delegate = self
+        
         errorView.alpha = 0
         let placeholderFont = UIFont(name: "Marker Felt", size: 14) ?? UIFont.systemFont(ofSize: 14)
         
@@ -61,4 +66,15 @@ class RegisterViewController : UIViewController{
         
         }
     }
+}
+
+extension RegisterViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        for textField in self.view.subviews where textField is UITextField {
+            textField.resignFirstResponder()
+        }
+        return true
+    }
+    
 }
